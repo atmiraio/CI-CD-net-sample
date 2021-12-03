@@ -10,9 +10,10 @@ namespace WebApi.DevOps.Test
         }
 
         [Test]
-        public void Test1()
+        public void NewEnviromentTest()
         {
-            Assert.Pass();
+            var enviroment = new Enviroment(1, "Testing", "TEST");
+            Assert.NotNull(enviroment);
         }
     }
 }
